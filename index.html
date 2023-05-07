@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchPad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>Etch-a-Sketch</h1></div>
+        <div class="main">
+            <div class="pad"></div>
+            <div class="buttons">
+                <input type="color" name="colorPicker" id="colorPicker">
+                <button class="rainbow">Rainbow</button>
+                <button class="eraser" onclick="eraser()">Eraser</button>
+                <button class="clear">Clear</button>
+                <div class="size">
+                    <input type="range" class="slider" value="16" maxlength="100" minlength="2" onchange="gridSize(this.value)">
+                    <h2>16 X 16</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
